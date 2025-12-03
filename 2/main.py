@@ -28,7 +28,7 @@ def is_invalid_id(n: int) -> bool:
     mid = len(s) // 2
     return s[:mid] == s[mid:]
 
-def main() -> None:
+def main():
     raw = sys.stdin.read().strip()
     if not raw:
         print(0)
