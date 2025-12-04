@@ -6,8 +6,8 @@ R, C = len(grid), len(grid[0])
 dirs = [(-1,-1),(-1,0),(-1,1),(0,-1),(0,1),(1,-1),(1,0),(1,1)]
 
 def accessible(r, c):
-    return grid[r][c] == '@' and sum(
-        0 <= r+dr < R and 0 <= c+dc < C and grid[r+dr][c+dc] == '@'
+    return grid[r][c] == "@" and sum(
+        0 <= r+dr < R and 0 <= c+dc < C and grid[r+dr][c+dc] == "@"
         for dr, dc in dirs
     ) < 4
 
